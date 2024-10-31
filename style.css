@@ -1,0 +1,78 @@
+/* ベーシックなスタイル */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #ffccff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.rogo {
+    display: flex;
+    justify-content: flex-start;/* 左寄せ*/
+    align-items: flex-start; /*上寄せ*/
+    
+}
+.rogo img {
+    width: 200px; /* 必要な幅に設定 */
+    margin: 0px; /* 中央に配置して上下に余白 */
+    /* display: block; ブロック要素として指定 */
+    
+}
+
+/* セクションのスタイル */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+#about {
+    background-color: #ffe6f7;
+}
+
+#gallery {
+    background-color: #e6f7ff;
+}
+
+#contact {
+    background-color: #e6ffe6;
+}
+
+a:hover {
+    color: #ff66b3; /* リンクをホバーしたときに色をピンクに */
+    text-decoration: underline;
+}
+/* フッターのスタイル */
+footer {
+    background-color: #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+img {
+    border: 2px solid #ff66b3;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
