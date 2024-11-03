@@ -36,7 +36,7 @@ nav ul li a {
     
 }
 .rogo img {
-    width: 100px; /* 必要な幅に設定 */
+    width: 150px; /* 必要な幅に設定 */
     margin: 0px; /* 中央に配置して上下に余白 */
     /* display: block; ブロック要素として指定 */
     margin: 0; /* 外側の余白をリセット */
@@ -49,6 +49,23 @@ nav ul li a {
     color: #ffffff;
 }
 
+.title img
+{
+    width: 700px; /* 必要な幅に設定 */
+    margin: 0px; /* 中央に配置して上下に余白 */
+    /* display: block; ブロック要素として指定 */
+    margin: 0; /* 外側の余白をリセット */
+    padding: 0; /* 内側の余白をリセット */
+
+} 
+
+.title video {
+    width: 100%;
+    border: 2px solid #ff66b3; /* ピンクの枠線 */
+    border-radius: 10px; /* 角を丸く */
+}
+
+
 /* セクションのスタイル */
 section {
     padding: 40px;
@@ -59,10 +76,43 @@ section {
     background-color: #ffe6f7;
 }
 
+.glow-text {
+    font-size: 48px; /* テキストサイズ */
+    color: #ffffff; /* テキスト色 */
+    text-align: center; /* 中央揃え */
+    background: linear-gradient(90deg, transparent, #00f, transparent); /* 背景グラデーション */
+    text-shadow: 
+        0 0 10px #00f, /* 輝きの外側 */
+        0 0 20px #00f, 
+        0 0 30px #00f,
+        0 0 40px #00f,
+        0 0 50px #00f,
+        0 0 75px #00f; /* 強い輝き */
+    padding: 20px 0; /* 上下にスペース */
+    position: relative;
+    display: inline-block;
+}
+
+
 #gallery {
     background-color: #328fba;
 }
+#gallery img {
 
+}
+
+.container {
+    display: flex;
+    align-items: center; /* 画像とテキストを縦方向に中央揃え */
+    gap: 20px; /* 画像とテキストの間に余白を作る */
+}
+.container img {
+    width: 60%;
+    height: 40%;
+}
+.float-right {
+    float: right; /* 右側に配置 */
+}
 #contact {
     background-color: #e6ffe6;
 }
@@ -80,4 +130,15 @@ footer {
 
 
 
+.video {
+    margin: 0; /* 外側の余白をなくす */
+    padding: 0; /* 内側の余白をなくす */
+}
 
+video {
+    display: block; /* ブロック要素にして余白を取り除く */
+    margin: 0; /* 外側の余白をなくす */
+    padding: 0; /* 内側の余白をなくす */
+    width: 100%; /* 必要に応じて幅を調整 */
+    height: auto; /* 縦横比を保つ */
+}
