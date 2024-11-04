@@ -1,4 +1,7 @@
 /* ベーシックなスタイル */
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
@@ -14,21 +17,37 @@ header {
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
+.menu {
+    background-color: #030303; /* メニューの背景色 */
+    padding-left: 50px ; /* 上下に余白を追加 */
+    padding-top: 30px ;
+    text-align: center; /* 中央揃え */
+    
+}
+
+.menu ul {
+    list-style: none; /* リストマーカーを削除 */
+    margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center; /* リンクを中央に揃える */
+    gap: 50px; /* リンク間のスペースを追加 */
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 10px;
+.menu li {
+    display: inline; /* リスト項目をインライン表示 */
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: #333;
+.menu a {
+    color: #ccc; /* リンクの文字色 */
+    text-decoration: none; /* 下線を削除 */
+    font-size: 30px; /* フォントサイズ */
+    transition: color 0.3s; /* 色の変化にアニメーションを追加 */
 }
 
+.menu a:hover {
+    color: #fff; /* ホバー時の文字色 */
+}
 .rogo {
     display: flex;
     justify-content: flex-start;/* 左寄せ*/
@@ -56,7 +75,6 @@ nav ul li a {
     /* display: block; ブロック要素として指定 */
     margin: 0; /* 外側の余白をリセット */
     padding: 0; /* 内側の余白をリセット */
-
 } 
 
 .title video {
@@ -132,13 +150,11 @@ footer {
 
 .video {
     margin: 0; /* 外側の余白をなくす */
-    padding: 0; /* 内側の余白をなくす */
+    padding: -40px; /* 内側の余白をなくす */
 }
 
-video {
+.video {
     display: block; /* ブロック要素にして余白を取り除く */
-    margin: 0; /* 外側の余白をなくす */
-    padding: 0; /* 内側の余白をなくす */
     width: 100%; /* 必要に応じて幅を調整 */
     height: auto; /* 縦横比を保つ */
 }
